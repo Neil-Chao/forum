@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>个人信息</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="script/jquery-3.3.1.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="script/echarts.min.js"></script>
+	<script src="script/information.js"></script>
+	<style>
+			@import "style/information.css"
+	</style>
+</head>
+	
+<body>
+	<header class="container-fluid">
+		<!-- 隐藏的用户id -->
+		
+	</header>
+	<div class="container">
+		<!-- 隐藏起来的标签 -->
+		<input id='portraitnum' value='0' style="display: none;" />
+		<input id='uid' value='0' style="display: none;"/>
+		
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		      </button>
+		      <a class="navbar-brand" href="main.html">疯狂起来吧！</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav" id="ulmore">
+				<li><a href="#">帖子</a></li>
+				<li><a href="#">分类</a></li>
+				
+				<li id="dropmore">
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						更多
+						<span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="dropmenumore">
+						<li><a href="javascript:void(0)" id="recordtrigger">登陆时间记录</a></li>
+					  </ul>
+					</div>
+				</li>
+				
+		      </ul>
+		      
+		     
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<table class="table table-hover" id="informationtable" style="background-color: white;">
+			<tr style="vertical-align: middle;">
+				<td style="text-align: center;vertical-align: middle;">
+					<b>头像</b>
+				</td>
+				<td style="text-align: center;vertical-align: middle;">
+					<a href="javascript:void(0)" class="thumbnail" id="changePortrait" style="width: 100px;">
+						<img src="material/hPortrait0.jpg" alt="..." style="width: 90px;height: 90px;" id='myportrait' class="img-thumbnail">
+					</a>
+						<!-- <div class="row">
+							<div class="col-md-2"  id="portrait">
+							<a href="javascript:void(0)" class="thumbnail" id="changePortrait">
+							  <img src="material/hPortrait0.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+							</a>
+							</div>
+						</div> -->
+
+				</td>
+			</tr>
+		</table>
+		
+		
+		
+		
+		<!-- 弹出模态框的按钮 -->
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="trigger">
+		  Launch demo modal
+		</button>
+		
+		<!-- 更改头像的模态框 -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content" >
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">更改头像</h4>
+		      </div>
+		      <div class="modal-body" id="portraitset">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='1'>
+						  <img src="material/hPortrait1.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+					
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='2'>
+						  <img src="material/hPortrait2.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+					
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='3'>
+						  <img src="material/hPortrait3.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='4'>
+						  <img src="material/hPortrait4.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+					
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='5'>
+						  <img src="material/hPortrait5.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+					
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='6'>
+						  <img src="material/hPortrait6.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='7'>
+						  <img src="material/hPortrait7.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+					
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='8'>
+						  <img src="material/hPortrait8.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+					
+					<div class="col-md-4">
+						<a href="javascript:void(0)" class="thumbnail changenum" value='9'>
+						  <img src="material/hPortrait9.jpg" style="width: 90px;height: 90px;" id='myportrait' alt="...">
+						</a>
+					</div>
+				</div>	
+					
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">关闭</button>
+		        <button type="button" class="btn btn-primary" id="confirm">确认</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
+		<!-- 查看登录时间的模态框 -->
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary btn-lg hidden" data-toggle="modal" data-target="#myModalMore" id="modalmore">
+		  Launch demo modal
+		</button>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="myModalMore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">登陆时间记录</h4>
+		      </div>
+		      <div class="modal-body">
+		        <table class="table table-hover" id="recordtable">
+		          <tr>
+					  <th style="text-align: center;">#</th>
+					  <th style="text-align: center;">登陆时间</th>
+				  </tr>
+		        </table>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
+		
+		
+		
+	</div>
+	<footer class="container-fluid">
+		
+	</footer>
+</body>
+	
+</html>

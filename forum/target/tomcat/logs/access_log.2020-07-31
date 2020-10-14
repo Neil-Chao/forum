@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:18:59 +0800] "GET /platform/main.html HTTP/1.1" 304 - http-bio-8080-exec-1 87
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:18:59 +0800] "GET /platform/style/main.css HTTP/1.1" 304 - http-bio-8080-exec-3 45
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:18:59 +0800] "GET /platform/material/bg21.jpg HTTP/1.1" 304 - http-bio-8080-exec-4 18
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:19:00 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:19:00 +0800] "POST /platform/getcurfactory HTTP/1.1" 200 - http-bio-8080-exec-5 170
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:20:35 +0800] "GET /platform/prodmgr.html HTTP/1.1" 302 - http-bio-8080-exec-8 26
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:20:35 +0800] "GET /platform/login.html HTTP/1.1" 304 - http-bio-8080-exec-10 10
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:20:37 +0800] "GET /platform/register.html HTTP/1.1" 304 - http-bio-8080-exec-10 39
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:10:20:37 +0800] "GET /platform/script/register.js HTTP/1.1" 304 - http-bio-8080-exec-10 27

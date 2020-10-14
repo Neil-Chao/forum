@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>帖子</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="script/jquery-3.3.1.min.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="script/echarts.min.js"></script>
+		<script src="script/post.js"></script>
+		<style>
+		        @import "style/post.css"
+		</style>
+</head>
+<body>
+	<header class="container-fluid">
+		<!-- 隐藏的标签 -->
+		<input class="hidden" type="text" value="0" id="pid"/>
+		
+	</header>
+	
+	<div class="container" id="body">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		      </button>
+		      <a class="navbar-brand" href="main.html">疯狂起来吧！</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+				<li><a href="#">帖子</a></li>
+				<li><a href="#">分类</a></li>
+		      </ul>
+		      
+		     
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<div id="postcontent">
+			<div class="page-header">
+			  <h2 id="title">Example page header</h2>
+			</div>
+			
+			<div>
+				<div id="portrait" uid="0" class="col-md-3">
+					<div>
+						<img id="p" style="width: 100px; height: 100px;"/>
+					</div>
+					<a id="sponsorinfo" href="information.html"><b id="sponsorname"></b></a>
+				</div>
+				
+				<div id="text" class="col-md-9">
+					
+				</div>
+				
+				<div id="begintime" class="col-md-9">
+					
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<footer class="container-fluid">
+		
+		
+	</footer>
+	
+
+</body>
+</html>

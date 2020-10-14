@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body{
+    background: url("../material/bg02.jpg") no-repeat;
+    background-size:cover;
+}
+
+form{
+    margin-top: 200px;
+}
+
+.control-label{
+	margin-left: 200px;
+	
+}
+
+.btn-default{
+    margin-top: 20px;
+    margin-left: 250px;
+}
+
+.form-horizontal{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 8px solid #C1CFD9;
+    border-radius: 7px;
+}
+#return{
+    margin-left: 700px;
+}

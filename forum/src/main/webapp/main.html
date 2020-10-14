@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>疯狂星期四╰(*°▽°*)╯</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="script/jquery-3.3.1.min.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="script/echarts.min.js"></script>
+		<script src="script/main.js"></script>
+		<style>
+		        @import "style/main.css"
+		</style>
+	</head>
+	<body>
+		<!-- 页眉 -->
+		<header class="container-fluid">
+			<!-- <form class="navbar-form navbar-left" role="search">
+			<span id="head1span">疯狂星期四-首页</span>
+			</form> -->
+			<!--         登录注册按钮          -->
+			<!-- 个人信息下拉菜单 -->
+			<div class="dropdown" id="welcome">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span id="curname">用户</span>
+				<span class="caret"></span>
+			  </button>
+
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1"  id="dropMenu">
+					<li><a href="information.html">用户信息</a></li>
+					<li><a href="changepwdtoo.html">更改密码</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="javascript:void(0)" id="logout">注销</a></li>
+				  </ul>
+
+			</div>
+			<!-- <span id="welcome" class="headfont">您好，<a id="curname" style="color: white;" href="information.html"></a></span>&nbsp; -->
+			<input type="hidden" id="fid"/>
+			<a href="login.html" class="headfont" id="headfont1">登录</a>&nbsp;<span class="headfont" id="headfont3">|</span>
+			<a href="register.html" class="headfont" id="headfont2">注册</a>
+		</header>
+		<div class="container">
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			      </button>
+			      <a class="navbar-brand" href="main.html">疯狂起来吧！</a>
+			    </div>
+			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+					<li><a href="#">帖子</a></li>
+					<li><a href="#">分类</a></li>
+			      </ul>
+			      
+			     
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			
+			<input type="hidden" name="pageNum" value="1" id="pageNum">
+			<input type="hidden" name="pageSize" value="10" id="pageSize">
+			
+			<div id="posts">
+			
+				<!-- 1 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 5 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 6 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 7 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 8 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 9 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+				<!-- 10 -->
+				<div class="row post">
+					<div  class="row title" id="title">
+						<b><a class="titletext" pid="0" href="post.html">震惊！</a></b>
+					</div>
+					<div class="row" id="info">
+						<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+						<span class="time">2020-9-29 20:55</span>
+					</div>
+				</div>
+			
+			</div>
+			
+			
+			<nav id="pagectrl">
+			  <ul class="pager">
+				<li><a href="javascript:void(0)" id="pre">上一页</a></li>&nbsp;&nbsp;
+				<b id="curPageinfo">第<b id="curPage"></b>页</b> &nbsp;
+				<b id="totalPageinfo">共<b id="totalPage"></b>页</b> &nbsp;&nbsp;
+				<li><a href="javascript:void(0)" id="next">下一页</a></li>
+			  </ul>
+			</nav>
+			
+			<div id="text">
+			
+				<input type="text" class="form-control" id="texttitle" placeholder="请输入标题...">
+				<textarea class="form-control" id="textarea" rows="6" ></textarea>
+				<button type="button" class="btn btn-primary" id="publish">发表</button>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<!-- 页脚 -->
+		<footer class="container-fluid">
+			<div id="footer1" class="row"> 
+				
+					<a id="contact" href="mailto:2248369238@qq.com">联系我们</a>
+					
+			</div>
+			
+		</footer>
+		
+		
+	</body>
+</html>

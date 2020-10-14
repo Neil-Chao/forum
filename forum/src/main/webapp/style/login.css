@@ -1,0 +1,58 @@
+body{
+	background:url("../material/bg18.jpg") no-repeat;
+	background-size: 100% auto;
+	height: 100%;
+}
+
+form{
+	margin-top: 200px;
+	
+}
+
+.control-label{
+	margin-left: 175px;
+	
+}
+
+.btn-default{
+	margin-top: 25px;
+	margin-left: 200px;
+}
+
+.form-horizontal{
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	margin-left: 400px;
+	margin-right: 400px;
+	border:8px solid lightgrey;
+	border-radius:7px;
+}
+
+#regnow{
+	margin-left: 495px;
+	color: pink;
+}
+
+#eyeicon{
+	float: left;
+	margin-top: 8px;
+}
+
+#forgetpwd{
+    margin-left: 15px;
+}
+#mes{
+	height: 50px;
+	width: 120px;
+	float: right;
+	margin-right: 120px;
+	margin-top: 5px;
+	height: 20px;
+	padding: 0;
+	display: none;
+}
+
+#loginform{
+	height: 300px;
+}

@@ -1,0 +1,40 @@
+body{
+	background:url("../material/bg09.jpg");
+	background-size: cover;
+}
+
+header{
+	background:url("../material/bg21.jpg");
+	background-size: 100%;
+	height: 200px;
+}
+
+#portrait{
+	width: 200px;
+}
+
+#trigger{
+	display: none;
+}
+
+#dropmore{
+	margin-top: 7px;
+	float: right;
+}
+
+#ulmore{
+	width: 85%;
+}
+
+#dropmenumore{
+	margin-top: 10px;
+}
+
+#informationtable{
+	width:40%;
+	margin: auto;
+}
+
+#changePortrait{
+	margin: auto;
+}
