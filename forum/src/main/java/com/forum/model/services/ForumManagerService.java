@@ -25,13 +25,13 @@ public class ForumManagerService {
 	private LoginrecordMapper lm;
 	
 	/*
-	 * 检查用户名是否重复
+	 * 检查电子邮箱是否重复
 	 */
-	public boolean checkUserName(String username) {
+	public boolean checkEmail(String email) {
 		UserinfoExample example=new UserinfoExample();
 		Criteria cc=example.createCriteria();
 		
-		cc.andUsernameEqualTo(username);
+		cc.andEmailEqualTo(email);
 		List<Userinfo> list=um.selectByExample(example);
 		return list.size()==0;
 	}
@@ -60,7 +60,7 @@ public class ForumManagerService {
 	 * 添加新用户
 	 */
 	public boolean addNewUser(Userinfo user) {
-		boolean isOK=checkUserName(user.getUsername());
+		boolean isOK=checkEmail(user.getEmail());
 		if(!isOK) {
 			return false;
 		}

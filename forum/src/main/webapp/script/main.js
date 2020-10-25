@@ -4,6 +4,11 @@ $(function(){
 			if(!data.pid){
 				alert("出错了...");
 			}
+		},"json"); 
+		$.post("/forum/visit",{"uid":$("#fid").val()},function(data){
+			if(!data.uid){
+				alert("出错了...");
+			}
 		},"json");
 	});
 });

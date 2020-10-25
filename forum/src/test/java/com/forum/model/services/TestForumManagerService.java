@@ -28,4 +28,8 @@ public class TestForumManagerService {
 		System.out.println(service.modUserpwd(7, "1234567"));
 	}
 	
+	@Test
+	public void testCheckEmail() {
+		System.out.println(service.checkEmail("2602695722@qq.com"));
+	}
 }

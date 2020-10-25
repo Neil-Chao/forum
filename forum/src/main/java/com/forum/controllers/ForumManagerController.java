@@ -22,9 +22,9 @@ public class ForumManagerController {
 	private ForumManagerService service;
 	
 	@ResponseBody //结果转换成json
-	@RequestMapping("/checkname")
-	public boolean doCheckname(Userinfo user) {    //检查用户名是否重复
-		return service.checkUserName(user.getUsername());
+	@RequestMapping("/checkemail")
+	public boolean doCheckname(Userinfo user) {    //检查电子邮箱是否重复
+		return service.checkEmail(user.getEmail());
 	}
 	
 	@RequestMapping("/checkforget")

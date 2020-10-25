@@ -103,3 +103,7 @@ header{
 .post div{
 	margin-left: 10px;
 }
+
+textarea{
+	resize:none;
+}

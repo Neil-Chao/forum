@@ -6,8 +6,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.forum.model.dao.CommentMapper;
 import com.forum.model.dao.PostMapper;
 import com.forum.model.dao.PostkindMapper;
+import com.forum.model.entity.Comment;
+import com.forum.model.entity.CommentExample;
+import com.forum.model.entity.CommentExample.Criteria;
 import com.forum.model.entity.Post;
 import com.forum.model.entity.PostExample;
 
@@ -23,6 +27,8 @@ public class PostManagerService {
 	private PostMapper pm;
 	@Autowired
 	private PostkindMapper pkm;
+	@Autowired
+	private CommentMapper cm;
 	
 	
 	public PageInfo<Post> searchAllPosts(int pageNum,int pageSize){
@@ -48,7 +54,34 @@ public class PostManagerService {
 		post.setTitle(title);
 		post.setText(text);
 		post.setBegintime(date);
-		System.out.println(pm.insertSelective(post)>0);
-		return true;
+		return pm.insertSelective(post)>0;
+	}
+	
+	/*
+	 * 发表评论
+	 */
+	public boolean insertComment(int pid,int uid,String text) {
+		Date date=new Date();
+		Comment comment=new Comment();
+		comment.setCommenttime(date);
+		comment.setPid(pid);
+		comment.setUid(uid);
+		comment.setText(text);
+		return cm.insertSelective(comment)>0;
+		
+	}
+	
+	/*
+	 * 根据帖子id查找所有评论
+	 */
+	public PageInfo<Comment> searchCommentsByPid(int pid,int pageNum,int pageSize){
+		System.out.println(pid);
+		CommentExample example=new CommentExample();
+		Criteria cc=example.createCriteria();
+		cc.andPidEqualTo(pid);
+		PageHelper.startPage(pageNum,pageSize);
+		List<Comment> res = cm.selectByExampleWithBLOBs(example);
+		System.out.println(res.size());
+		return new PageInfo<Comment>(res);
 	}
 }

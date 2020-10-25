@@ -17,7 +17,8 @@ header{
 
 #postcontent{
 	width: 800px;
-	margin: auto;
+	margin-top:250px;
+	margin-left: 165px;
 }
 
 #portrait{
@@ -25,7 +26,6 @@ header{
 	height: 200px;
 	text-align: center;
 	padding-top: 20px;
-	
 } 
 
 #sponsorinfo:hover{
@@ -49,3 +49,45 @@ header{
 	color: black;
 }
 
+#replytext{
+	margin: auto;
+	width: 800px;
+}
+
+#reply{
+	margin-top: 5px;
+	float:right;
+}
+
+textarea{
+	
+	resize:none;
+}
+
+.comment{
+	
+	
+	width: 800px;
+	margin: auto;
+	border: lightgray solid 4px;
+	background-color: white;
+	border-radius: 7px;
+	margin-top: 4px;
+	
+}
+
+.comment div{
+	margin-left: 10px;
+}
+
+.realcomment{
+	font-size: medium;
+}
+
+.sponsorname{
+	color: black;
+}
+
+.sponsorname:hover{
+	text-decoration: none;
+}

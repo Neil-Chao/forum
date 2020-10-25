@@ -19,7 +19,10 @@
 	<header class="container-fluid">
 		<!-- 隐藏的标签 -->
 		<input class="hidden" type="text" value="0" id="pid"/>
+		<input class="hidden" type="text" value="0" id="uid"/>
 		
+		<input type="hidden" name="pageNum" value="1" id="pageNum">
+		<input type="hidden" name="pageSize" value="10" id="pageSize">
 	</header>
 	
 	<div class="container" id="body">
@@ -45,29 +48,155 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 		
-		<div id="postcontent">
-			<div class="page-header">
-			  <h2 id="title">Example page header</h2>
-			</div>
-			
-			<div>
-				<div id="portrait" uid="0" class="col-md-3">
-					<div>
-						<img id="p" style="width: 100px; height: 100px;"/>
-					</div>
-					<a id="sponsorinfo" href="information.html"><b id="sponsorname"></b></a>
-				</div>
-				
-				<div id="text" class="col-md-9">
-					
-				</div>
-				
-				<div id="begintime" class="col-md-9">
-					
-				</div>
-			</div>
-			
+		
+		<div class="page-header">
+		  <h2 id="title">Example page header</h2>
 		</div>
+		
+		<div style="width: 800px; margin-left: 165px;">
+			<div id="portrait" uid="0" class="col-md-3">
+				
+				<div>
+					<img id="p" style="width: 100px; height: 100px;"/>
+				</div>
+				<a id="sponsorinfo" href="information.html"><b id="sponsorname"></b></a>
+			</div>
+			
+			<div id="text" class="col-md-9"  style="background-color: white" >
+				
+			</div>
+			
+			<div id="begintime" class="col-md-9"  style="background-color: white" >
+				
+			</div>
+		</div>
+		
+		<div id="postcontent">
+			
+			<!-- 1 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 2 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 3 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 4 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 5 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 6 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 7 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 8 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 9 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<!-- 10 -->
+			<div class="row comment">
+				<div  class="row" id="commenttext">
+					<b class="realcomment">我是一条评论</b>
+				</div>
+				<div class="row" id="info">
+					<span class="sponsor"><a class="sponsorname" href="javascript:void(0)">赵佩西</a></span>
+					<span class="time">2020-9-29 20:55</span>
+				</div>
+			</div>
+			
+			<nav id="pagectrl">
+			  <ul class="pager">
+				<li><a href="javascript:void(0)" id="pre">上一页</a></li>&nbsp;&nbsp;
+				<b id="curPageinfo">第<b id="curPage"></b>页</b> &nbsp;
+				<b id="totalPageinfo">共<b id="totalPage"></b>页</b> &nbsp;&nbsp;
+				<li><a href="javascript:void(0)" id="next">下一页</a></li>
+			  </ul>
+			</nav>
+		
+			<div id="replytext">
+				<textarea class="form-control" id="textarea" rows="6" ></textarea>
+				<button type="button" class="btn btn-primary" id="reply">回复</button>
+			</div>
+		
 		
 	</div>
 	
